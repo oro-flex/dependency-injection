@@ -1,0 +1,40 @@
+{
+    "name": "oro-flex/dependency-injection",
+    "description": "The Oro DependencyInjection Component extends [Symfony DependencyInjection](http://symfony.com/doc/current/components/dependency_injection/introduction.html) component with some additional functionality.",
+    "homepage": "https://github.com/oroinc/platform/tree/master/src/Oro/Component/DependencyInjection",
+    "license": "MIT",
+    "authors": [
+	    {
+            "name": "Nikita Makarov",
+            "email": "mesaverde228@gmail.com"
+        },
+        {
+            "name": "Oro, Inc",
+            "homepage": "https://oroinc.com/"
+        }
+    ],
+    "require": {
+        "php": "~7.4.14 || ~8.0.0"
+    },
+    "require-dev": {
+    },
+    "conflict": {
+        "oro/platform": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "symfony": {
+            "require": "5.4.*"
+        },
+        "branch-alias": {
+            "dev-master": "5.0-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Oro\\Component\\DependencyInjection\\": ""
+        },
+        "exclude-from-classmap": ["/Tests/"]
+    }
+}
